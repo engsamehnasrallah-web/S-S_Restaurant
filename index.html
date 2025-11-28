@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="This Is My Landing Page Of My Restaurant">
+        <meta name="author" content="Sameh Nasrallah">
+        <title>S'S Restaurant</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+                <h1>Welcome In S'S Restaurant</h1>
+                <p>Delicious Food & Great Atmosphere</p>
+                <a href="#prices" class="btn">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="dish1.jpg" alt="Dish 1">
+                    <h3>Grilled Chicken</h3>
+                    <p>Juicy grilled chicken served with seasonal vegetables.</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="dish2.jpg" alt="Dish 2">
+                    <h3>Pasta</h3>
+                    <p>Fresh pasta with a medley of garden vegetables.</p>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="dish3.jpg" alt="Dish 3">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Decadent chocolate cake with a molten center.</p>
+                    <span class="price">$6.99</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Prices Table -->
+        <div class="prices-table" id="prices">
+            <table>
+                    <caption><b>Menu Prices</b></caption>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken</td>
+                    <td rowspan="2">$12.99</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Lava Cake</td>
+                    <td>$6.99</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">There Is More...</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- Survey Section -->
+        <div class="survey-section">
+            <h2>Feedback Survey</h2>
+            <p>We appreciate your feedback! Please take a moment to fill out this short survey:</p>
+
+            <form class="survey-form">
+
+                <!-- Rating -->
+                <label for="rating">Your Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select your rating</option>
+                    <option value="1">⭐ 1</option>
+                    <option value="2">⭐ 2</option>
+                    <option value="3">⭐ 3</option>
+                    <option value="4">⭐ 4</option>
+                    <option value="5">⭐ 5</option>
+                </select>
+
+                <!-- Radio Buttons -->
+                <p>How did you find our website?</p>
+                <label><input type="radio" name="found_us" value="search" required> Search Engine</label><br>
+                <label><input type="radio" name="found_us" value="friend"> Friend Recommendation</label><br>
+                <label><input type="radio" name="found_us" value="social"> Social Media</label><br>
+
+                <!-- Checkboxes -->
+                <p>Which parts of the website did you like?</p>
+                <label><input type="checkbox" name="likes" value="design"> Website Design</label><br>
+                <label><input type="checkbox" name="likes" value="content"> Content Quality</label><br>
+                <label><input type="checkbox" name="likes" value="speed"> Loading Speed</label><br>
+                <label><input type="checkbox" name="likes" value="usability"> Ease of Use</label><br>
+
+                <!-- Message -->
+                <label for="message">Additional Comments:</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Write your feedback here..."></textarea>
+
+                <!-- Submit -->
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+
+
+        <!-- About us section -->
+        <div class="about-section">
+            <h2>About Us</h2>
+            <p><B>S'<sup>S</sup> Restaurant</B> has been serving <I>delicious food</I> since <mark>1995</mark>. <sub>Our</sub> commitment to quality <del>ingredients</del> and exceptional service has made us a favorite among locals and visitors alike. Join us for a memorable dining experience!</p>
+        </div>
+
+        <!-- Contact us section -->
+        <div class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        
+        <input type="text" placeholder="Enter Your Username" class="username">
+        <input type="email" placeholder="Enter Your Email" class="email">
+        <input type="submit" value="Submit" class="submit-btn">
+
+        <p>You Can Also Contact us using:</p>
+
+        <ol type="I" start="4" class="contact-list">
+            <li>
+                Phone Numbers:
+                <ul>
+                    <li>01018458012</li>
+                    <li>01557032433</li>
+                </ul>
+            </li>
+
+            <li>
+                Facebook: samehnasrallah@yahoo.com
+            </li>
+        </ol>
+    </div>
+
+    </body>
+</html>
